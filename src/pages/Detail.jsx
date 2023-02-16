@@ -9,7 +9,7 @@ const Detail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const todo = useSelector(
-    (state) => state.todos.todos.filter((item) => item.id === id)[0]
+    (state) => state.todos.todos.filter((item) => item.id == id)[0]
   );
 
   return (

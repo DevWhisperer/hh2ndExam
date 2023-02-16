@@ -72,7 +72,7 @@ const todos = (state = initialState, action) => {
       return {
         ...state,
         todos: state.todos.map((todo) => {
-          if (todo.id === action.payload) {
+          if (todo.id == action.payload) {
             return {
               ...todo,
               isDone: !todo.isDone,
@@ -87,7 +87,7 @@ const todos = (state = initialState, action) => {
       return {
         ...state,
         todo: state.todos.find((todo) => {
-          return todo.id === action.payload;
+          return todo.id == action.payload;
         }),
       };
     default:
