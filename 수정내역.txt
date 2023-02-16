@@ -1,0 +1,14 @@
+1. form.js에서 onsubmit후 todo의 state를 dispatch함
+2. 리듀서에서 기존의 state를 반영하는 것이 빠져서 수정하였다. 또한 추가시 id가 0으로 고정되어 있어서
+nextid가 들어가도록 하였다.
+
+3.reducer에 swich에 delete todo가 없어 만듬
+
+4. useparams를 가져오고 잘 넣어줬고 useSelector가져올때 오타가 있었고,
+id가 useparams와 일치하는 것을 찾아 가져오고 넣어줬다.
+
+5. 완료 목록에서 map 돌릴때, link to 뒤에 인덱스로 가길래, id로 잘 가서 
+상세 페이제서도 id로 store을 탐색할 수 있도록 했다.
+
+6. 완료 버튼의 onclick에서 함수의 파라미터로 id가 전달될 수 있게 하였다.
+
